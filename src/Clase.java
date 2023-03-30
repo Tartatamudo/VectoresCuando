@@ -26,7 +26,7 @@ public class Clase {
     }
 
     public static boolean isPrime(int numero){
-        if (numero == 0 || numero == 1 || numero == 4) {
+        if (numero == 0 || numero == 1 || numero == 4 || numero < 0) {
             return false;
                     }
         for (int i = 2; i < numero / 2; i++) {
@@ -64,5 +64,10 @@ public class Clase {
         }
         System.out.println(otherVec.get(otherVec.size()-1));
         System.out.println();
+    }
+
+    public static int comprobarReadDim(){
+        int num = readDim();
+        return num;
     }
 }
